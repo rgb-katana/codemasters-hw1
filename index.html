@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ДЗ 1</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/93e4ac48ce.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__heading1">Домашняя работа 1</h1>
+      <p>
+        <em
+          >ДЗ 1. Форма со всеми доступными контролами + встроенные медиа
+          ресурсы.</em
+        >
+      </p>
+    </header>
+    <main>
+      <section>
+        <form action="#" method="get" class="form">
+          <fieldset>
+            <legend>
+              Most common inputs: <i class="fa-solid fa-recycle"></i>
+            </legend>
+            <div class="form-row">
+              <label for="full-name">Text input*</label>
+              <input id="full-name" name="full-name" type="text" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" />
+            </div>
+            <div class="form-row">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" />
+            </div>
+            <div class="form-row">
+              <label for="tel">Phone</label>
+              <input
+                id="tel"
+                pattern="^\+7[1-9]{10}$"
+                placeholder="+71234567891"
+                name="tel"
+                type="tel"
+              />
+            </div>
+            <div class="form-row">
+              <label for="number">Number</label>
+              <input id="number" name="number" type="number" />
+            </div>
+            <div class="form-row">
+              <label for="date">Date</label>
+              <input id="date" name="date" type="date" />
+            </div>
+            <div class="form-row">
+              <label for="file">File input</label>
+              <input type="file" id="file" />
+            </div>
+            <input type="hidden" id="hidden" name="hidden" value="hidden" />
+          </fieldset>
+          <fieldset>
+            <legend>
+              Rarely used inputs:
+              <i class="fa-solid fa-person-falling-burst"></i>
+            </legend>
+            <div class="form-row">
+              <label for="range">Range</label>
+              <input
+                id="range"
+                name="range"
+                type="range"
+                min="1"
+                max="10"
+                step="1"
+                value="5"
+              />
+              <output for="range">Range value</output>
+            </div>
+            <div class="form-row">
+              <label for="month">Month</label>
+              <input id="month" name="month" type="month" />
+            </div>
+            <div class="form-row">
+              <label for="week">Week</label>
+              <input id="week" name="week" type="week" />
+            </div>
+            <div class="form-row">
+              <label for="time">Time</label>
+              <input id="time" name="time" type="time" />
+            </div>
+            <div class="form-row">
+              <label for="color">Color</label>
+              <input id="color" name="color" type="color" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Radio buttons and checkbox: <i class="fa-solid fa-burst"></i>
+            </legend>
+            <input
+              id="radio-first"
+              name="radio"
+              type="radio"
+              value="radio-first"
+            />
+            <label for="radio-first" class="radio-label">First</label>
+            <input
+              id="radio-second"
+              name="radio"
+              type="radio"
+              value="radio-second"
+              checked
+            />
+            <label for="radio-second" class="radio-label">Second</label>
+            <input
+              type="checkbox"
+              id="checkbox"
+              value="checkbox"
+              name="checkbox"
+            />
+            <label for="checkbox">Checkbox</label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Select and textarea: <i class="fa-solid fa-bacon"></i>
+            </legend>
+            <div class="form-row">
+              <label for="select">Select</label>
+              <select id="select" name="select">
+                <option value="1">Select 1</option>
+                <option value="2">Select 2</option>
+                <option value="3">Select 3</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="textarea">Textarea</label>
+              <textarea
+                id="textarea"
+                mame="textarea"
+                placeholder="Write something here"
+              ></textarea>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Other form features: <i class="fa-solid fa-trash"></i>
+            </legend>
+            <div class="form-row form-row__progress">
+              <span>Meter</span>
+              <meter
+                min="0"
+                max="100"
+                value="75"
+                low="33"
+                high="66"
+                optimum="50"
+              >
+                75
+              </meter>
+            </div>
+            <div class="form-row form-row__progress">
+              <span>Progress</span>
+              <progress max="100" value="75">75/100</progress>
+            </div>
+          </fieldset>
+          <div class="form-row">
+            <span class="buttons__description"
+              >Submit, reset and regular button:</span
+            >
+            <div class="buttons__container">
+              <button type="submit">Submit this form</button>
+              <button type="reset">Reset this form</button>
+              <button type="button">Do Nothing without JavaScript</button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section>
+        <div class="media-container">
+          <h2>Media</h2>
+          <span
+            >Картинка с srcset, если смотреть с retina экрана будет 1000*500,
+            если с обычного, то 1000*500</span
+          >
+          <div class="illustration">
+            <img
+              src="./images/small.png"
+              srcset="./images/small.png 1x, ./images/big.png 2x"
+              style="max-width: 500px"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
