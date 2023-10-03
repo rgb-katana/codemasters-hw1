@@ -183,16 +183,47 @@
       <section>
         <div class="media-container">
           <h2>Media</h2>
-          <span
-            >Картинка с srcset, если смотреть с retina экрана будет 1000*500,
-            если с обычного, то 1000*500</span
-          >
-          <div class="illustration">
-            <img
-              src="./images/small.png"
-              srcset="./images/small.png 1x, ./images/big.png 2x"
-              style="max-width: 500px"
-            />
+          <div class="media-row">
+            <span
+              >Картинка с srcset, если смотреть с retina экрана будет 1000*500,
+              если с обычного, то 500*250:</span
+            >
+            <div class="illustration">
+              <img
+                src="./images/small.png"
+                srcset="./images/small.png 1x, ./images/big.png 2x"
+                style="max-width: 500px"
+                alt="пример картинки с srcset"
+              />
+            </div>
+          </div>
+          <div class="media-row">
+            <span>Та же картинка но с использованием тега figure:</span>
+            <div class="illustration">
+              <figure>
+                <img
+                  src="./images/small.png"
+                  srcset="./images/small.png 1x, ./images/big.png 2x"
+                  style="max-width: 500px"
+                  alt="пример картинки с srcset"
+                />
+                <figcaption><i>Succession S04E10</i></figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="media-row">
+            <span>Видео:</span>
+            <video src="./videos/video1.mp4" controls autoplay muted></video>
+          </div>
+          <div class="media-row">
+            <span>Пример .gif</span>
+            <div class="illustration">
+              <img
+                src="./gifs/gif1.gif"
+                style="max-width: 250px"
+                alt="пример гифки"
+              />
+            </div>
           </div>
         </div>
       </section>

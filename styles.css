@@ -172,3 +172,27 @@ output {
   align-items: center;
   gap: 1rem;
 }
+
+.media-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0 0 0;
+}
+
+.media-row span {
+  text-align: left;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.illustration img {
+  width: 100%;
+  display: block;
+}
+
+video {
+  width: 100%;
+  display: block;
+}
